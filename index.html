@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chore Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+     
+</head>
+<!-- A  600 x 600 pixel image will be displayed in the background repeatedly across the x and y axis-->
+<body style=" background-repeat: repeat;
+background-image: url('Background_image.jpg');">
+
+<!-- mt = Margin top, 5 is largest spacing-->
+    <div class="container mt-5">
+        <h1 class="text-center">Chore Manager</h1>
+        <h4  class="text-center fw-bold">Never forget your chores again! Manager all chores in one place.</h4>
+        
+        <!--Buttons -->
+        <!--class centers buttons-->
+        <div class="text-center">
+            <!--link add_person file through button click-->
+             <!-- class is a bootstap custom button styles (blue and large)-->
+            <a href="add_person.html" class="btn btn-outline-primary btn-lg">Add Person</a>
+
+            <!--Link add_chore file-->
+            <a href="add_chore.html" class="btn btn-outline-primary btn-lg">Add Chore</a>
+
+        </div>
+
+        <!-- horizontal divider-->
+         <hr>
+
+         <!--Where chores and names will appear -->
+         <h2>Chores</h2>
+         <thread class="m-3 fw-bold">
+            <tr >
+                <th>Chore</th>
+                <th>Assigned To</th>
+                <th>Status</th>
+                <th>Progress</th>
+            </tr>
+
+         </thread>
+    </div>
+</body>
+</html>

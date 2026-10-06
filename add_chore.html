@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Chore</title>
+
+     <!--Bootstap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+</head>
+<body style=" background-repeat: repeat;
+background-image: url('Background_image.jpg');">
+
+    <div class="container mt-5">
+        <h1 class="text-center fw-bold">Add Chore</h1>
+
+        <!-- Form -->
+         <form>
+            <!--Chore Name-->
+            <div class="mb-3">
+                <!-- id connects the input to the lable, name is used to connect HTML to flask -->
+                <lable for="chore_name" class="form-lable fw-bold">Name of Chore</lable>
+                <input type="text" class="form-control" id="chore_name" name="chore_name" required>
+            </div>
+
+            <!--Description-->
+            <div class="mb-3">
+                <lable for="description" class="form-label fw-bold">Description</lable>
+                <textarea class="form-lable w-100" id="description" name="description" rows="7" ></textarea>
+            </div>
+
+            <!--Due Date-->
+            <div class="mb-3">
+                <lable for="due_date" class="form-lable fw-bold">Due Date</lable>
+                <input type="date" class="form-control" id="due_date" name="due_date">
+            </div>
+
+            <!--Assign To-->
+            <div class="mb-3">
+                <lable for="assigned_to" class="form-lable fw-bold">Assigned To</lable>
+                <select class="form-select" id="assigned_to" name="assigned_to" required>
+                    <option value=""> Select a person </option>
+                </select>
+
+            </div>
+
+             <!-- Buttons -->
+            <button type="submit" class="btn btn-primary">Add person</button>
+
+            <a href="index.html" class="btn btn-secondary">Return Back to Chore Manager</a>
+
+         </form>
+    </div>
+    
+</body>
+</html>
